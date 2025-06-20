@@ -26,9 +26,14 @@ kotlin {
             dependencies {
                 implementation(compose.runtime)
                 implementation(compose.foundation)
-                implementation(compose.material)
+                implementation(compose.material3)
+                implementation(compose.materialIconsExtended)
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
+
+                // Coil
+                implementation("io.coil-kt.coil3:coil-compose:3.0.0-alpha06")
+                implementation("io.coil-kt.coil3:coil-network-ktor:3.0.0-alpha06")
 
                 // Ktor
                 implementation("io.ktor:ktor-client-core:2.3.11")

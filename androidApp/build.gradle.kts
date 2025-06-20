@@ -16,7 +16,7 @@ kotlin {
                 implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
                 implementation("com.google.firebase:firebase-auth-ktx")
                 implementation("com.google.android.gms:play-services-maps:18.2.0")
-                implementation("com.google.maps.android:maps-compose:4.4.1")
+                // implementation("com.google.maps.android:maps-compose:4.4.1")
             }
         }
     }

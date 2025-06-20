@@ -1,14 +1,12 @@
 package com.arrudeia.core.designsystem.theme
 
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.lightColors
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 
-private val LightColorPalette = lightColors(
+private val lightColorScheme = lightColorScheme(
     primary = vibrantGreen,
-    primaryVariant = vibrantGreen,
     secondary = sunshineYellow,
     background = background,
     surface = cardsAndPanels,
@@ -20,13 +18,12 @@ private val LightColorPalette = lightColors(
     onError = Color.White
 )
 
-@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun ArrudeiaTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
-        colors = LightColorPalette,
+        colorScheme = lightColorScheme,
         typography = ArrudeiaTypography(),
         content = content
     )
